@@ -1,0 +1,21 @@
+{
+  "apps": [
+    {
+      "name": "orange-resume-api",
+      "script": "./app/routes/index.js",
+      "watch": [
+        "app"
+      ],
+      "ignore_watch": [
+        "node_modules",
+        "logs",
+        "mock"
+      ],
+      "instances": 4,
+      "node_args": "--harmony",
+      "exec_mode": "cluster",
+      "error_file": "./logs/orange-resume-api-err.log",
+      "out_file": "./logs/orange-resume-api-out.log"
+    }
+  ]
+}
